@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | SHANI Art</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="top-bar">
+            <span>TAKING BOOKINGS FOR 2025</span>
+        </div>
+        <div class="logo-container">
+            <a href="index.html"><img src="assets/images/logo.png" alt="Shani Madhu - Professional Artist & Illustrator"
+                    class="logo-img"></a>
+        </div>
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li>
+                    <a href="#">Commissions ▾</a>
+                    <ul>
+                        <li><a href="gallery.html">Portrait Gallery</a></li>
+                        <li><a href="commissions.html">Commission Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-hero" style="background-image: url('assets/images/portrait-beagle.png'); /* Placeholder */">
+        <div class="hero-content">
+            <h1>CONTACT</h1>
+        </div>
+    </div>
+
+    <main class="contact-main">
+        <div class="container container-narrow">
+            <p class="contact-intro text-center">
+                Please contact me with any queries you have either by filling out the form or send me an email.<br>
+                Email: hello@shani.com
+            </p>
+
+            <div class="contact-socials text-center">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" id="lastname" name="lastname">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">What are you contacting about? *</label>
+                    <div class="select-wrapper">
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Choose an option</option>
+                            <option value="commission">Commission Enquiry</option>
+                            <option value="order">Shop Order</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Write a message</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Where are you located? *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="location" value="uk"> United Kingdom
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="location" value="us"> United States
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="location" value="canada"> Canada
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="location" value="other"> Other (please specify where)
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Email List *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="newsletter" value="yes"> I would like to be added to your email
+                            list to receive exciting updates & news (Check the box)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="newsletter" value="already"> I've already signed up
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="newsletter" value="no"> No thank you
+                        </label>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">SUBMIT</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Newsletter Section (Reused) -->
+    <section class="newsletter-section">
+        <div class="container text-center">
+            <div class="newsletter-icon">
+                <i class="far fa-envelope"></i> <!-- Font Awesome Icon -->
+            </div>
+            <h2>SUBSCRIBE TO MY NEWSLETTER</h2>
+            <p>Subscribe for exclusive discounts, monthly newsletters and to stay up to date with what I am working on!
+            </p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter email here" required>
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+            <div class="mailmunch-badge">
+                <img src="https://a.mailmunch.co/img/mailmunch_logo.png" alt="mailmunch" style="height: 20px;">
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <!-- Reusing Footer -->
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>shop</h4>
+                <ul>
+                    <li><a href="shop.html">Shop All</a></li>
+                    <li><a href="commissions.html">Commissions</a></li>
+                    <li><a href="gallery.html">Portrait Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>information</h4>
+                <ul>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>contact</h4>
+                <p>hello@shani.com</p>
+                <div class="social-icons">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">PI</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
